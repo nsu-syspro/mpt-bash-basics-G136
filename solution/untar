@@ -7,6 +7,6 @@ AR_NAME=$*
 UNPACK_DIR=${AR_NAME}.unpacked
 
 
-mkdir "$UNPACK_DIR"
+mkdir -p "$UNPACK_DIR"
 
 tar -xf "$AR_NAME" -C "$UNPACK_DIR"
