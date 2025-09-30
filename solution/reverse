@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -e
+
+
+REVERSED=
+
+while read -r line
+do
+    REVERSED="${line}
+${REVERSED}"
+done
+
+printf '%s' "$REVERSED"

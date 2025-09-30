@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -e
+
+
+AR_NAME=$*
+UNPACK_DIR=${AR_NAME}.unpacked
+
+
+mkdir -p "$UNPACK_DIR"
+
+tar -xf "$AR_NAME" -C "$UNPACK_DIR"

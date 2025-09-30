@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -e
+
+
+SUF=$1
+FILES=( "${@:2}" )
+
+for file in "${FILES[@]}"; do
+    mv "$file" "${file}${SUF}";
+done
